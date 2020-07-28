@@ -6,18 +6,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AnimalShelter.Controllers
 {
-  public class AnimalsController : Controller
+  public class CatagoriesController : Controller
   {
     private readonly AnimalShelterContext _db;
 
-    public AnimalsController(AnimalShelterContext db)
+    public CategoriesController(AnimalShelterContext db)
     {
       _db = db;
     }
 
     public ActionResult Index()
     {
-      List<Animal> model = _db.Animals.Include(AnimalsController => animals.Category).ToList();
+      List<Categories> model = _db.Categories.ToList();
       return View(model);
     }
 
@@ -27,44 +27,44 @@ namespace AnimalShelter.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Animal animal)
+    public ActionResult Create(Category category)
     {
-      _db.Animals.Add(animal);
+      _db.Categories.Add(category);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
 
     public ActionResult Details(int id)
     {
-        Animal thisAnimal = _db.Animals.FirstOrDefault(AnimalsController => AnimalsController.Id == id);
-        return View(thisAnimal);
+        Category thisCategory = _db.Categories.FirstOrDefault(CategoriesController => CategoriesController.Id == id);
+        return View(thisCategory);
     }
 
     public ActionResult Edit(int id)
     {
-      var thisAnimal = _db.Animals.FirstOrDefault(animals => animals.Id == id);
-      return View(thisAnimal);
+      var thisCategory = _db.Categories.FirstOrDefault(Categories => Categories.Id == id);
+      return View(thisCategory);
     }
 
     [HttpPost]
-    public ActionResult Edit(Animal animal)
+    public ActionResult Edit(Category category)
     {
-      _db.Entry(animal).State = EntityState.Modified;
+      _db.Entry(category).State = EntityState.Modified;
       _db.SaveChanges();
       return RedirectToAction("Index");
     }
 
     public ActionResult Delete(int id)
     {
-      var thisAnimal = _db.Animals.FirstOrDefault(animals => animals.Id == id);
-      return View(thisAnimal);
+      var thisCategory = _db.Categories.FirstOrDefault(categories => categories.Id == id);
+      return View(thisCategory);
     }
 
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-      var thisAnimal = _db.Animals.FirstOrDefault(animals => animals.Id == id);
-      _db.Animals.Remove(thisAnimal);
+      var thisCategory = _db.Categories.FirstOrDefault(categories => categories.Id == id);
+      _db.Animals.Remove(thisCategory);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

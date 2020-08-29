@@ -93,9 +93,9 @@ with the root project folder open in your code editor, execute the following in 
 
 # **❤️Contributors**
 
-| [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/frederick-ernest.jpeg' width='160px;'/><br /><sub><b>Frederick Ernest</b></sub>](https://www.linkedin.com/in/frederick-ernest/)<br />
+[<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/frederick-ernest.jpeg' width='160px;'/><br /><sub><b>Frederick Ernest</b></sub>](https://www.linkedin.com/in/frederick-ernest/)<br />
 
-| [<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/hannah-beinstein.jpeg' width='160px;'/><br /><sub><b>Hannah Beinstein</b></sub>](https://www.linkedin.com/in/hannahbeinstein/)<br />
+[<img src='https://coding-assets.s3-us-west-2.amazonaws.com/linked-in-images/hannah-beinstein.jpeg' width='160px;'/><br /><sub><b>Hannah Beinstein</b></sub>](https://www.linkedin.com/in/hannahbeinstein/)<br />
 
 <br>
 

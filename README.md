@@ -1,4 +1,4 @@
-<h1 align='center'><img width='900' height='450' src='https://coding-assets.s3.us-west-2.amazonaws.com/hero_images/AnimalShelter.Solution.jpg'><br>
+<h1 align='center'><img width='900' height='450' src='https://montclairdispatch.com/wp-content/uploads/2016/02/Photo-taken-by-Eric-Delmar-courtesy-of-Niki-Dawson.png'><br>
 
 
 **<h1 align = 'center'>Animal Shelter**
